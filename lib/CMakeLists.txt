@@ -1,1 +1,6 @@
 add_subdirectory(murmur3)
+add_subdirectory(trace)
+add_subdirectory(linked-list)
+add_subdirectory(ansi-colors)
+add_subdirectory(macro-utils)
+add_subdirectory(hash-table)

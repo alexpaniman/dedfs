@@ -6,6 +6,6 @@ set(CMAKE_CXX_FLAGS "-D_FILE_OFFSET_BITS=64")
 find_package(FUSE REQUIRED)
 
 target_include_directories(dedfs
-  PRIVATE ${FUSE_INCLUDE_DIR})
+  PUBLIC ${FUSE_INCLUDE_DIR})
 
-target_link_libraries(dedfs PRIVATE ${FUSE_LIBRARIES})
+target_link_libraries(dedfs PUBLIC hash-table murmur3 ${FUSE_LIBRARIES})
