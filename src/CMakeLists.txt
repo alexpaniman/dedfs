@@ -9,3 +9,4 @@ target_include_directories(dedfs
   PUBLIC ${FUSE_INCLUDE_DIR})
 
 target_link_libraries(dedfs PUBLIC hash-table murmur3 ${FUSE_LIBRARIES})
+install(TARGETS dedfs DESTINATION bin)

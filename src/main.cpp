@@ -356,17 +356,17 @@ void block_tests() {
     char block[BLOCK_SIZE];
 
     block_storage blocks;
-    printf("%p\n", blocks.get_block(block, BLOCK_SIZE));
-    printf("%p\n", blocks.get_block(block, BLOCK_SIZE));
+    printf("%d\n", blocks.get_block(block, BLOCK_SIZE));
+    printf("%d\n", blocks.get_block(block, BLOCK_SIZE));
     block[10] = 1;
-    printf("%p\n", blocks.get_block(block, BLOCK_SIZE));
-    printf("%p\n", blocks.get_block(block, BLOCK_SIZE));
+    printf("%d\n", blocks.get_block(block, BLOCK_SIZE));
+    printf("%d\n", blocks.get_block(block, BLOCK_SIZE));
 
     char other[BLOCK_SIZE];
-    printf("%p\n", blocks.get_block(other, BLOCK_SIZE));
-    printf("%p\n", blocks.get_block(other, BLOCK_SIZE));
+    printf("%d\n", blocks.get_block(other, BLOCK_SIZE));
+    printf("%d\n", blocks.get_block(other, BLOCK_SIZE));
 
-    printf("%p\n", blocks.get_block(block, BLOCK_SIZE));
+    printf("%d\n", blocks.get_block(block, BLOCK_SIZE));
 }
 
 int main(int argc, char* argv[]) {
